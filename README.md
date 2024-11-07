@@ -1,6 +1,6 @@
 ## Intrinsic fluctuations in global connectivity reflect transitions between states of high and low prediction error
 
-The code for the present report is organized into six folders: `Study1A`, `Study1B`, `Study2A`, `Study2B`, `Study3`, and `Utils` (utility functions). All of the code was written in Python, except for one .R function used for the multilevel regression in `Study2B`. The figures produced by the code and added to the manuscript are availabe in `result_pics`.
+The code for the present report is organized into six folders: `Study1A`, `Study1B`, `Study2A`, `Study2B`, `Study3`, and `Utils` (utility functions). All of the code was written in Python, except for one .R function used for the multilevel regression in `Study2B`. The figures produced by the code and added to the manuscript are availabe in `result_pics`. The code was originally prepared and tested in Python 3.12.
 
 Scripts ending in "funcs" contain functions called by other scripts and are not meant to be run. Scripts containing the term "analyze" were used to generate numbers that were reported in the manuscript's text (e.g., the t-value in Study 2B). Scripts containing the term ("plot") were used to generate the figures, although these itself generally contain considerable code for analysis (e.g., computing regressions or calling modularity functions).
 
@@ -11,10 +11,10 @@ Scripts ending in "funcs" contain functions called by other scripts and are not 
 * `plot_Fig2AB_matrices.py`: generates the Figure 2A & 2B matrices via linear regression. Note that many 
 * `plot_Fig2CD_partitions.py`: generates the Figure 2C & 2D modules and partitions of the ROIs, in part, with functions from modularity_funcs.py
 * `plot_Fig2E_partitions.py`: generates the Figure 2E anatomical modules, in part, with functions from `plot_Fig2CD_partitions.py`.
-* `plot_Fig2F_bars.py`: generates the bar graphs, using functions from several other `Study1A` scripts.
+* `plot_Fig2F_boxes.py`: generates the Seaborn boxen plots using functions from several other `Study1A` scripts.
 
 ### `Study1B` files:
-* `analyzie_plot_Fig3.py`: runs all of the Study 1B statistical tests and generates Figure 3. Uses data that was preprocessed via `preprocess_Study1B.py`
+* `analyzie_plot_Fig3.py`: runs all of the Study 1B statistical tests and generates Figure 3 (matrix and boxen plots). Uses data that was preprocessed via `preprocess_Study1B.py`
 * `final_HCP_subjects.txt`: is a list of IDs corresponding to the 1,000 Human Connectome Project (HCP) subjects used. In general, these list corresopnds to the lowest 1000 IDs from the dataset, but participants who did not have data for either run of the task or rs-fMRI session were not included (this could be partly due to errors in downloading).
 * `preprocess_Study1B.py`: preprocesses (unzipped) files for the gambling task downloaded from the HCP and runs the single-trial-beta regressions. Preprocessing and single-trial beta code has been released given that this dataset is publicly available. Preprocessing is done using NiLearn.
 
