@@ -6,7 +6,7 @@ Scripts ending in "funcs" contain functions called by other scripts and are not 
 
 
 ### `Study1A` code:
-* `load_Study1A_funcs.py`: loads the Study1A task-fMRI data. Note that the data itself cannot be released due to IRB restrictions. Nonetheless, this script has been included. It loads .nii images, extract ROI timeseries, and compute connectivity. Some scripts for the organization of trial data (i.e., defining which trial is high PE and which is low PE) were not included.
+* `load_Study1A_funcs.py`: loads the Study1A task-fMRI data. Note that the data itself cannot be released into a public repository due to IRB restrictions. Nonetheless, this script has been included. It loads .nii images, extract ROI timeseries, and compute connectivity. Some scripts for the organization of trial data (i.e., defining which trial is high PE and which is low PE) were not included.
 * `modularity_funcs.py`: contains functions related to computing modularity and partitioning connectome matrices.
 * `plot_Fig2AB_matrices.py`: generates the Figure 2A & 2B matrices via linear regression. Note that many 
 * `plot_Fig2CD_partitions.py`: generates the Figure 2C & 2D modules and partitions of the ROIs, in part, with functions from modularity_funcs.py
