@@ -1,9 +1,8 @@
 ## Intrinsic fluctuations in global connectivity reflect transitions between states of high and low prediction error
 
-The code for the present report is organized into six folders: `Study1A`, `Study1B`, `Study2A`, `Study2B`, `Study3`, and `Utils` (utility functions). All of the code was written in Python, except for one .R function used for the multilevel regression in `Study2B`. 
+The code for the present report is organized into six folders: `Study1A`, `Study1B`, `Study2A`, `Study2B`, `Study3`, and `Utils` (utility functions). All of the code was written in Python, except for one .R function used for the multilevel regression in `Study2B`. The figures produced by the code and added to the manuscript are availabe in `result_pics`.
 
 Scripts ending in "funcs" contain functions called by other scripts and are not meant to be run. Scripts containing the term "analyze" were used to generate numbers that were reported in the manuscript's text (e.g., the t-value in Study 2B). Scripts containing the term ("plot") were used to generate the figures, although these itself generally contain considerable code for analysis (e.g., computing regressions or calling modularity functions).
-
 
 
 ### `Study1A` code:
