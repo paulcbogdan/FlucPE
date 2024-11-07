@@ -12,7 +12,6 @@ def plot_connectivity(conn, ticks=None, tick_labels=None, tick_lows=None,
                       tick_low=None, tick_high=None, minimal=False,
                       colorbar=True, cmap='turbo', adjust_HC_AMY=True,
                       dontoverride=False):
-
     if atlas is not None:
         ticks = atlas['ticks']
         tick_labels = atlas['tick_labels']
@@ -75,8 +74,8 @@ def plot_connectivity(conn, ticks=None, tick_labels=None, tick_lows=None,
         low -= 0.5
         plt.plot([-0.5, M_connect.shape[0]], [low, low], 'k', linewidth=0.5)
         plt.plot([low, low], [-0.5, M_connect.shape[0]], 'k', linewidth=0.5)
-    plt.xlim([-0.5, M_connect.shape[0]-0.5])
-    plt.ylim([-0.5, M_connect.shape[0]-0.5])
+    plt.xlim([-0.5, M_connect.shape[0] - 0.5])
+    plt.ylim([-0.5, M_connect.shape[0] - 0.5])
     if minimal:
         plt.gca().invert_yaxis()
         plt.gca().set_xticks([])
@@ -93,8 +92,8 @@ def plot_connectivity(conn, ticks=None, tick_labels=None, tick_lows=None,
     plt.yticks(ticks, tick_labels, fontsize=fontsize)
     plt.xticks(ticks, tick_labels, fontsize=fontsize, rotation=90)
     if colorbar:
-        cbar = plt.colorbar(shrink=0.77, aspect=20*0.7, label=cbar_label,
-                            pad=0.04,)
+        cbar = plt.colorbar(shrink=0.77, aspect=20 * 0.7, label=cbar_label,
+                            pad=0.04, )
 
         cbar.ax.tick_params(labelsize=fontsize * 1.75)
 
